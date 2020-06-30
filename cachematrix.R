@@ -2,6 +2,7 @@
 ## functions do
 
 ## Write a short comment describing this function
+## Following function is similiar to the function given by the instructor.reprents a null object 
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -13,6 +14,9 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
 }
+
+## the matrix returned by makeCacheMatrix will inversed. 
+
 makeCacheMatrix <- function (x = matrix()){
   inv <- NULL
   set <- function(y){
@@ -25,6 +29,7 @@ makeCacheMatrix <- function (x = matrix()){
   list (set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 }
 
+##if inverse already calculated, then the value will be returned by CacheSolve
 cacheSolve <- function (x,...){
   inv <- x$getInverse()
   if(!is.null(inv)){
